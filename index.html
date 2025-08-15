@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>未来科学道具研究所</title><meta name="author" content="Ruky"><meta name="copyright" content="Ruky"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="未来科学道具研究所">
+<meta property="og:url" content="https://ruky.qzz.io/index.html">
+<meta property="og:site_name" content="未来科学道具研究所">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/12/19/rEcL2PxGVFgWfjt.jpg">
+<meta property="article:author" content="Ruky">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/12/19/rEcL2PxGVFgWfjt.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "未来科学道具研究所",
+  "url": "https://ruky.qzz.io/"
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ruky.qzz.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '未来科学道具研究所',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/background.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://s2.loli.net/2022/12/19/rEcL2PxGVFgWfjt.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 時間軸</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友鏈</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 關於</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url(https://s2.loli.net/2022/12/19/kTgtWoGJqRlxw1F.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">未来科学道具研究所</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 時間軸</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音樂</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友鏈</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 關於</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">未来科学道具研究所</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/ruky-timetravel" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://space.bilibili.com/30346888?spm_id_from=333.337.0.0" target="_blank" title="bilibili"><i class="fab fa-bilibili" style="color: #23ADE5;"></i></a><a class="social-icon" href="https://www.douyin.com/user/MS4wLjABAAAAAKQs111JsaWoh_vP2qyRvxh00f4LnMxv6PNMRvMa1EbaIoeJmc3Dh0_Rlhzfeoqk?from_tab_name=main&amp;vid=7536568006421826874" target="_blank" title="tiktok"><i class="fab fa-tiktok" style="color: #hdhfbb;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/12/24/CAN%E6%80%BB%E7%BA%BF/" title="CAN总线"><img class="post-bg" src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CAN总线"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/24/CAN%E6%80%BB%E7%BA%BF/" title="CAN总线">CAN总线</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-23T16:00:00.000Z" title="发表于 2022-12-24 00:00:00">2022-12-24</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/CAN%E6%80%BB%E7%BA%BF/">CAN总线</a></span></div><div class="content">CAN总线CAN总线简介CAN总线协议（Controller Area Network），控制器局域网总线，是德国BOSCH（博世）公司研发的一种串行通讯协议总线，它可以使用双绞线来传输信号，是世界上应用最广泛的现场总线之一。CAN协议主要用于汽车中各种不同元件之间的通信，以此取代昂贵而笨重的配电线束，该协议的健壮性使其同样适用于自动化和工业环境中。即使双绞线中有一根断路，或有一根接出其至两根线短接，总线都必须能继续工作。 CAN总线优点 简单且成本低 完全集中 抗干扰能力极强 高效  CAN节点组成CAN节点通常由三部分组成：CAN收发器、CAN控制器和MCU。 CAN总线通过差分信号进行数据传输，CAN收发器将差分信号转换为TTL电平信号，或者将TTL电平信号转换为差分信号，CAN控制器将TTL电平信号接收并传输给MCU CAN总线特性在CAN总线上，利用CAN_H和CAN_L两根线上的电位差来表示CAN信号。CAN 总线上的电位差分为显性电平（Dominant Voltage）和隐性电平（Recessive Voltage），其中显性电平为逻辑 0，隐性电平为逻辑 1。 </div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/12/19/PID%E7%B2%BE%E8%AE%B2/" title="PID精讲"><img class="post-bg" src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PID精讲"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/19/PID%E7%B2%BE%E8%AE%B2/" title="PID精讲">PID精讲</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-18T16:00:00.000Z" title="发表于 2022-12-19 00:00:00">2022-12-19</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/PID/">PID</a></span></div><div class="content">PID精讲|阅读量: PID精讲(该文章是本人对视频的个人整理笔记，如有侵权请联系我进行删除)引入假设一个工人控制水阀，使水流量稳定，工人可以看到并知道水流量为1L&#x2F;s。某时刻，水管破裂，流量变为0.9L&#x2F;s，工人通过控制水阀使得流量恢复到1L&#x2F;s。之后，工厂要求水流达到2L，工人通过观察并控制水阀使得水流量为2L&#x2F;s。 在上面的例子中，工人起到的作用如下：  稳定流量 改变流量 检测流量  PID可以理解为代替工人作用的工具。 适用系统适用于二阶及以内的线性系统 线性系统性质（信号与系统）（卡尔曼滤波）：  齐次性（设y&#x3D;f(x),在x变为kx时，y变为ky） 叠加性 （设y1&#x3D;f(x1)，设y2&#x3D;f(x2)，y1+y2&#x3D;f(x1)+f(x2)&#x3D;f(x1+x2)）  一阶系统​  二阶系统 宏观意义开环控制系统 PID 为其中的控制器，接收期望值，发出动作信号给执行器。可以类比上文的工人控制水阀的情况。 前馈控制系统 PID 为其中的控制器，接收期望值，发出动作信号给执行器。可以类比上文的...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/12/19/%E6%97%A5%E8%AF%AD%E7%AC%94%E8%AE%B0/" title="日语笔记"><img class="post-bg" src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日语笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/19/%E6%97%A5%E8%AF%AD%E7%AC%94%E8%AE%B0/" title="日语笔记">日语笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-18T16:00:00.000Z" title="发表于 2022-12-19 00:00:00">2022-12-19</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">日语笔记日语笔记对于日语学习的一些看法和交流日语是借鉴于中国的文字日本古代是没有正式的文字的，只存在语音上的交流，因此产生了许多不便。自从开始与中国展开交流以后，借鉴我们中国的汉字，发明了日语并沿用至今。我个人认为无论何种语言，其间都会有交叉的地方，即语言不是独立一说。那不难联想到在遥远的古代或许只存在一种人种,即人类这一人种。 日语门槛在五十音图经过一段时间的学习，我发现五十音果然异常重要，就像中文里的拼音，像英文里的字母。所以一定要背熟五十音图。 ps：日语不算难，但没有耐心是不行的，或者说任何一门语言都需要耐心的积累。 语法速成 </div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/12/19/%E9%BA%A6%E5%85%8B%E7%BA%B3%E5%A7%86%E8%BD%AE/" title="麦克纳姆轮定义"><img class="post-bg" src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="麦克纳姆轮定义"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/19/%E9%BA%A6%E5%85%8B%E7%BA%B3%E5%A7%86%E8%BD%AE/" title="麦克纳姆轮定义">麦克纳姆轮定义</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-18T16:00:00.000Z" title="发表于 2022-12-19 00:00:00">2022-12-19</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E9%BA%A6%E5%85%8B%E7%BA%B3%E5%A7%86%E8%BD%AE/">麦克纳姆轮</a></span></div><div class="content">麦克纳姆轮麦克纳姆轮定义首先在研究轮子前，让我们先了解一下它的特性，下面这篇文章写得较好可以先阅读一下，别人已经把轮子造出来了，就没有必要再把文章复制一遍￼. 转载文章链接：挽风 古月居 麦克纳姆轮的原理转载视频链接:[麦克纳姆轮定义](可以前后左右平移的神器轮子 来看看是怎么做到的-麦克纳姆轮平移原理_哔哩哔哩_bilibili) 麦克纳姆轮在程序中的实现首先来看一下麦克纳姆轮配合esp32的效果 转载视频链接:ESP-NOW、蓝牙控制微型麦克纳姆轮小车-哔哩哔哩 1ESP32蓝牙麦克纳姆轮全向小车开源资料 gitee仓库：https://gitee.com/kvcx/bluetooth-car  麦克纳姆轮优缺点 优点  任意方向运动 狭小空间内的灵活穿梭 平面内任意方向的快速精确定位   缺点  成本相对较高 对电控要求较高    </div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/07/19/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" title="c语言学习"><img class="post-bg" src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言学习"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/19/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" title="c语言学习">c语言学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-18T16:00:00.000Z" title="发表于 2022-07-19 00:00:00">2022-07-19</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c</a></span></div><div class="content">c语言学习|阅读量: 第一节 学习打印        &#96;&#96;&#96;    1    2    3    4    5    6    7    &#96;&#96;&#96; &#96;&#96;&#96;   #include &lt;stdio.h&gt;    int main()    {    /* 我的第一个 C 程序 */ printf(&quot;Hello, World! \n&quot;); return 0;  }  * 所有的 C 语言程序都需要包含 **main()** 函数。 代码从 **main()** 函数开始执行。  * **printf()** 用于格式化输出到屏幕。**printf()** 函数在 **“stdio.h”** 头文件中声明。  * **/\* … \*/** 用于注释说明。  * **stdio.h** 是一个头文件 (标准输入输出头文件) , **#include** 是一个预处理命令，用来引入头文件。 当编译器遇到 **printf()** 函数时，如果没有找到 **stdio.h** 头文件，会发生编译...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/07/19/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0/" title="电路原理笔记"><img class="post-bg" src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="电路原理笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/19/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0/" title="电路原理笔记">电路原理笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-18T16:00:00.000Z" title="发表于 2022-07-19 00:00:00">2022-07-19</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">电路原理笔记电压 电流 参考方向 功率 电阻 独立源 受控源 KCL KVL 电阻等效变换 电源等效变换 </div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/07/19/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/" title="高等数学笔记"><img class="post-bg" src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高等数学笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/19/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/" title="高等数学笔记">高等数学笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-18T16:00:00.000Z" title="发表于 2022-07-19 00:00:00">2022-07-19</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">高等数学笔记极限     导数 微分   不定积分 </div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/12/19/rEcL2PxGVFgWfjt.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Ruky</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.douyin.com/user/MS4wLjABAAAAAKQs111JsaWoh_vP2qyRvxh00f4LnMxv6PNMRvMa1EbaIoeJmc3Dh0_Rlhzfeoqk?from_tab_name=main&amp;vid=7536568006421826874"><i class="fab fa-tiktok"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/ruky-timetravel" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="https://space.bilibili.com/30346888?spm_id_from=333.337.0.0" target="_blank" title="bilibili"><i class="fab fa-bilibili" style="color: #23ADE5;"></i></a><a class="social-icon" href="https://www.douyin.com/user/MS4wLjABAAAAAKQs111JsaWoh_vP2qyRvxh00f4LnMxv6PNMRvMa1EbaIoeJmc3Dh0_Rlhzfeoqk?from_tab_name=main&amp;vid=7536568006421826874" target="_blank" title="tiktok"><i class="fab fa-tiktok" style="color: #hdhfbb;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/24/CAN%E6%80%BB%E7%BA%BF/" title="CAN总线"><img src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CAN总线"/></a><div class="content"><a class="title" href="/2022/12/24/CAN%E6%80%BB%E7%BA%BF/" title="CAN总线">CAN总线</a><time datetime="2022-12-23T16:00:00.000Z" title="发表于 2022-12-24 00:00:00">2022-12-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/19/PID%E7%B2%BE%E8%AE%B2/" title="PID精讲"><img src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PID精讲"/></a><div class="content"><a class="title" href="/2022/12/19/PID%E7%B2%BE%E8%AE%B2/" title="PID精讲">PID精讲</a><time datetime="2022-12-18T16:00:00.000Z" title="发表于 2022-12-19 00:00:00">2022-12-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/19/%E6%97%A5%E8%AF%AD%E7%AC%94%E8%AE%B0/" title="日语笔记"><img src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日语笔记"/></a><div class="content"><a class="title" href="/2022/12/19/%E6%97%A5%E8%AF%AD%E7%AC%94%E8%AE%B0/" title="日语笔记">日语笔记</a><time datetime="2022-12-18T16:00:00.000Z" title="发表于 2022-12-19 00:00:00">2022-12-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/19/%E9%BA%A6%E5%85%8B%E7%BA%B3%E5%A7%86%E8%BD%AE/" title="麦克纳姆轮定义"><img src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="麦克纳姆轮定义"/></a><div class="content"><a class="title" href="/2022/12/19/%E9%BA%A6%E5%85%8B%E7%BA%B3%E5%A7%86%E8%BD%AE/" title="麦克纳姆轮定义">麦克纳姆轮定义</a><time datetime="2022-12-18T16:00:00.000Z" title="发表于 2022-12-19 00:00:00">2022-12-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/19/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" title="c语言学习"><img src="https://s2.loli.net/2025/08/15/avnq5FVoXw7jONs.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言学习"/></a><div class="content"><a class="title" href="/2022/07/19/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" title="c语言学习">c语言学习</a><time datetime="2022-07-18T16:00:00.000Z" title="发表于 2022-07-19 00:00:00">2022-07-19</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/CAN%E6%80%BB%E7%BA%BF/" style="font-size: 1.1em; color: #999">CAN总线</a> <a href="/tags/%E9%BA%A6%E5%85%8B%E7%BA%B3%E5%A7%86%E8%BD%AE/" style="font-size: 1.1em; color: #999">麦克纳姆轮</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.5em; color: #99a9bf">笔记</a> <a href="/tags/PID/" style="font-size: 1.1em; color: #999">PID</a> <a href="/tags/c/" style="font-size: 1.1em; color: #999">c</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2022/12/">
+            <span class="card-archive-list-date">
+              十二月 2022
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2022/07/">
+            <span class="card-archive-list-date">
+              七月 2022
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">7</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">1.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-15T05:49:09.035Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2019 - 2025 By Ruky</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
